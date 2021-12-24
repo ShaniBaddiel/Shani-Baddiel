@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset ="utf-8"/>
+<title>African resorts</title>
+<link rel = "stylesheet" a href = "chalets.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type = "text/javascript" src = "chalets.js"></script>
+
+    <style>
+.backButton{
+  border-radius: 15%;
+  background-color:seashell;
+}
+
+.backButton a{
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+}
+    </style>
+</head>
+
+
+ <!---in this website, 
+1) the tab of cape town's 'underdogs' should only appear if cape town is hovered over, otherwise the 3 should not be there.
+2) also when clicking on the dates of the year, a calendar should pop up and you shlould be able to choose what date you would like to stay, from when to when. 
+3) some dates should be gradyed out/marked with a cross, so that the user can not choose those. 
+4) the image of the chalets/whole container should be right at the top of the page 
+5) and the chalet should be cut off, without any extra space from the roof to end of page.--->   
+    
+    
+    
+<body bgcolor="lightcoral">
+  <button class="backButton"><a href="../portfolio.html">Back</a></button>
+
+    
+    
+  <table bgcolor= "lightgreen" width="100%">
+     
+      
+     <tr><td><div class="chaletdiv"> <img src ="Images/chalet.png" width="200px" height="250px"></div>
+         </td>
+         
+    <td>
+     <h3>Afr<img src = "Images/giraffe.png" height="60px">ca Chalets</h3></td>
+         
+         </tr>
+   
+     <td  colspan="2">
+     <img src = "Images/grass.png"/><img src = "Images/grass.png"/><img src = "Images/grass.png"/><img src = "Images/grass.png"/><img src = "Images/grass.png"/><img src = "Images/grass.png"/><img src = "Images/grass.png"/>
+          </td>
+         
+    </table>
+    
+ 
+    <div class="navbar">
+
+  <div class="subnav"> 
+
+  
+    <button class="subnavbtn">Area<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+        <a href="Images/mozamb.JPG" target="_blank">Mozambique</a>
+    <a href="Images/Bloem.JPG" target="_blank">Bloemfontein</a>
+       <a href="Images/joburg.JPG" target="_blank">Johannesburg</a>
+          <a href="Images/zim.JPG" target="_blank">Zimbabwe</a>
+        
+ <div class="subnav">
+     <button class="subnavbtn"> <a href="Images/cape%20town.JPG" target="_blank">Cape Town</a></button> <i class="fa fa-caret-down"></i>
+<div class="subnav-content"> 
+    <a href="robberg.html">Robberg</a>
+      <a href="lionhead.html">Lion's head</a>
+      <a href="Jeff.html">Jeff's hill</a>
+   </div> 
+</div>
+        
+      </div></div>
+
+  <div class="subnav">
+    <button class="subnavbtn">Price<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="rooms/room1.html">R250 > 500pp</a>
+      <a href="rooms/room2.html">R500 > 1000pp</a>
+      <a href="rooms/room3.html">R1000  > 2500pp</a>
+      <a href="rooms/room4.html">R2500 > 5000pp</a>
+      <a href="rooms/room5.html">R5000 > 10000pp</a>
+    </div>
+  </div> 
+  
+  <div class="subnav">
+    <button class="subnavbtn">Month<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#link1">Jan</a>
+      <a href="#link2">Feb</a>
+      <a href="#link3">March</a>
+      <a href="#link4">April</a>
+              <a href="#link1">May</a>
+      <a href="#link2">Jun</a>
+      <a href="#link3">July</a>
+      <a href="#link4">Aug</a>
+              <a href="#link1">Sep</a>
+      <a href="#link2">Oct</a>
+      <a href="#link3">Nov</a>
+      <a href="#link4">Dec</a>
+    </div>
+  </div>
+  <a href="#footer">Contact</a>
+</div>
+
+
+
+    
+    
+    <div class ="slider" align="center">
+        
+    <img src="Images/mozamb.jpg" alt="Mozambique" class="img-container"/>
+    <img src="Images/zim.jpg" alt="Zimbabwe" class="img-container"/>
+    <img src="Images/joburg.jpg" alt="Johannesburg" class="img-container"/>
+    <img src="Images/Bloem.jpg" alt="Bloemfontein" class="img-container"/>
+    <img src="Images/cape town.jpg" alt="Cape Town" class="img-container"/>
+    </div>
+    
+    
+
+<script>
+    var myIndex = 0;
+imgSlider();
+
+function imgSlider() {
+  var i;
+  var slideshow = document.getElementsByClassName("img-container");
+  for (i = 0; i < slideshow.length; i++) {
+    slideshow[i].style.display = "none"; 
+    
+  }
+  myIndex++;
+  if (myIndex > slideshow.length) {myIndex = 1} ;   
+  slideshow[myIndex-1].style.display = "block";  
+  setTimeout(imgSlider, 5000); 
+}
+
+    </script>
+
+
+<a name="footer"><footer>
+    
+    <h1>Africa Chalets</h1>
+    <br>Web developed by Shani Baddiel, Webdix.com <br><br>
+    contact us! Email: <a href="#">shanibaddiel52@gmail.com </a><br><br>Telephone: 011 440 9649<br><br>Fax: 085 546 5542<br></footer></a>
+    
+    
+
+</body>
+</html>

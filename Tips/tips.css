@@ -1,0 +1,34 @@
+/*tips css*/
+body {
+    text-align: center;
+}
+
+h1 {
+    color: brown;
+    padding: 20px;
+}
+
+button {
+    padding:15px;
+    background-color:brown;
+    font-size: 35px;
+    color:white;
+    border-radius: 15px;
+    cursor:pointer;
+}
+
+#container {
+    padding: 30px;
+    background-color:lemonchiffon;
+}
+
+#selectService {
+    padding: 20px;
+    cursor:pointer;
+}
+
+
+
+
+
+

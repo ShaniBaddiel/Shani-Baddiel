@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ice cream!</title>
+    <link rel="stylesheet" a href="icecream.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Rye' rel='stylesheet'>
+    <script type="text/javascript" src="icecream.js"></script>
+    <style>
+        .backButton {
+            border-radius: 15%;
+            background-color: seashell;
+        }
+
+        .backButton a {
+            color: black;
+            text-decoration: none;
+            font-size: 15px;
+            padding: 10px;
+        }
+    </style>
+
+
+</head>
+
+
+<audio addEventlistener(onload,setTimeout()) ; preload="auto" src="mrbean.mp3" type="audio/mp3" controls hidden
+    id="audio" loop>
+    Your browser does not support the audio element.
+</audio>
+
+
+
+<body bgcolor="pink">
+
+    <button class="backButton"><a href="../portfolio.html">Back</a></button>
+
+
+    <div class="slider" align="center">
+
+        <img src="Images/icecream.png" alt="chocolate" class="img-container" />
+        <img src="Images/icecreamstrawb.png" alt="strawberry" class="img-container" />
+        <img src="Images/icecreammint.png" alt="pink" class="img-container" />
+
+        <div class="text-block">Ice Cream</div>
+    </div>
+
+
+    <div id="container1">
+
+        <div class="flexitems">
+            <p id="deliverytext"><img src="Images/animatedcream.gif" align="center" /> Deliveries to your door!
+            </p>
+        </div>
+
+        <div class="flexitems">
+            <button onclick="document.getElementById('audio').play()" class="audiobuttons">Play music!</button>
+        </div>
+
+        <div class="flexitems">
+            <button onclick="document.getElementById('audio').pause()" class="audiobuttons">Pause</button>
+        </div>
+
+    </div>
+
+
+    <marquee scrollamount="8"><img src="Images/icevan.png" alt="moving ice cream van" />
+    </marquee>
+
+
+    <hr>
+
+    <div class="container">
+
+        <div class="subnav">
+
+
+            <button class="cellstyle" id="tab1">Order now!<i class="fa fa-caret-down"></i></button>
+
+        </div>
+
+
+
+
+        <div class="subnav">
+            <button class="cellstyle">Ice Cream flavours<i class="fa fa-caret-down"></i></button>
+        </div>
+
+
+
+
+        <div class="subnav">
+            <button class="cellstyle" id="tab2">Prices<i class="fa fa-caret-down"></i></button>
+        </div>
+
+        <div class="subnav">
+            <button class="cellstyle" id="tab3">Arrival Time<i class="fa fa-caret-down"></i></button>
+
+
+        </div>
+
+        <div class="subnav">
+            <a href="#footer"><button class="cellstyle">Contact</button></a>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="subnav">
+
+
+            <label for="scoops">
+                <input type="radio" name="2" onclick='showPrice()'>2 scoops
+            </label>
+
+            <label for="scoops">
+                <input type="radio" name="2" onclick='showScoops()'>4 scoops
+            </label>
+
+            <label for="scoops">
+                <input type="checkbox" name="food" onclick='showPop()'>Popcorn
+            </label>
+
+            <label for="scoops">
+                <input type="checkbox" name="food" onclick='showCoke()'>Coke 250ml
+            </label>
+        </div>
+
+
+
+        <div class="subnav" id="flavours">
+            <ul>
+                <li>Chocolate</li>
+                <li>Vanilla</li>
+                <li>Toffee</li>
+                <li>Hazelnut</li>
+                <li>Coffee</li>
+                <li>Bubblegum</li>
+                <li>Almond</li>
+            </ul>
+        </div>
+
+
+
+        <div class="subnav">
+
+
+            <p id="price1" style="display:none">R23
+            </p>
+            <p id="scoops" style="display:none">R49.99
+            </p>
+            <p id="pop" style="display:none">R36.40
+            </p>
+            <p id="coke" style="display:none">R13.59
+            </p>
+
+
+
+        </div>
+
+
+        <div class="subnav">
+
+            <label for="times">
+                <input type="radio" name="shift">8-10
+            </label>
+
+            <label for="times">
+                <input type="radio" name="shift">10-12
+            </label>
+
+            <label for="times">
+                <input type="radio" name="shift">12-2
+            </label>
+
+            <label for="times">
+                <input type="radio" name="shift">2-4
+            </label>
+        </div>
+
+
+    </div>
+
+
+
+
+    <script>
+        var myIndex = 0;
+        imgSlider();
+
+        function imgSlider() {
+            var i;
+            var slideshow = document.getElementsByClassName("img-container");
+            for (i = 0; i < slideshow.length; i++) {
+                slideshow[i].style.display = "none";
+
+            }
+            myIndex++;
+            if (myIndex > slideshow.length) { myIndex = 1 };
+            slideshow[myIndex - 1].style.display = "block";
+            setTimeout(imgSlider, 3000);
+        }
+
+
+        /* document.getElementById("noitems").innerHTML="No. of items you have placed with us.";
+       document.getElementById("noitems").innerHTML;
+          */
+
+    </script>
+
+    <!-- <br><br><b> Add to cart <img src="Images/cart.png" width="20" height="15" /> </b>
+
+
+    <p id="noitems">
+    </p> -->
+
+    Click here to <button type="submit" class="linkinvisible audiobuttons"><a href="nex.html">Submit</a></button> your
+    order.
+    <br><br>
+    <aside>In a live website, this would have been linked to a checkout page.</aside>
+    
+   
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+body{
+    padding-top: 20px;
+    background-color:rgb(233, 219, 219);
+    
+}
+
+#topHeader{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 38px;
+}
+
+.niceFont{
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight:400;
+}
+
+#backdrop{
+    width: 100%;
+    opacity: 0.5;
+    top: 0;
+    position: absolute;
+    height: 280vh;
+}
+
+#overlay{
+	position: relative;
+    /*how it's positioned acc. to page.*/
+    top: 35px;
+    bottom: 0;
+    left: -60px;
+    right: 10px; 
+	z-index: 10;
+    text-align: center;
+    padding: 0;
+
+}
+
+.button-links{
+    font-size: 25px;
+    background-color:seashell;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.button-links:hover{
+    border: 2px dashed black;
+}
+
+.links{
+text-decoration: none;
+color: black;
+}
+
+.links:hover{
+   text-decoration: none;
+    color: black;
+}
+
+#contact{
+    background-color:seashell;
+    color:black;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    margin-left: -200px;
+    cursor: pointer;
+    border: 2px dashed black;
+    width: 180px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+
+#contact>a{
+    color: black;
+    text-decoration: none;
+}
+
+#contact>a:hover{
+    color: seashell;
+    background-color: black;
+}
+
+
+#contact:hover{
+   color: seashell;
+background-color: black;
+border: 5px solid seashell;
+cursor:auto;
+}
+
+.button{
+    cursor: pointer;
+}
+
+.navbar{
+background-color: seashell;
+font-family:'Source Sans 3', sans-serif;
+font-size: 30px;
+font-weight: 400;
+top: 0;
+position: absolute;
+width: 100%;
+z-index: 30;
+margin-bottom: 10px;
+}
+
+.row>#linksNavbar{
+        text-decoration: none;
+        color: black;   
+}
+
+.row>.linksNavbar:hover{
+    text-decoration: none;
+     color: black;
+     background-color: yellow;
+ }
+
+.pstyle{
+    border: 2px dashed black;
+    margin-bottom: 15px;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+
+/*The following is used for the skills.html page*/
+.pskills {
+    display: block;
+   opacity:1;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+        opacity:0.3;
+      width: 300%;
+      font-size: 100%;
+    }
+
+  
+    75% {
+        opacity: 0.6;
+      font-size: 60%;
+      margin-right: 25%;
+      width: 150%;
+    }
+  
+    to {
+    opacity: 1;
+     margin-right: 0%;
+      width: 100%;
+      font-size:100%;
+    }
+  }
+  
+  
+.pskills:nth-child(1) { animation-delay: 0s; }  
+.pskills:nth-child(2) { animation-delay: 2s; }
+.pskills:nth-child(3) { animation-delay: 4s; }
+.pskills:nth-child(4) { animation-delay: 6s; }
+.pskills:nth-child(5) { animation-delay: 8s }
+.pskills:nth-child(6) { animation-delay: 10s; }
+.pskills:nth-child(7) { animation-delay: 12s; }
+.pskills:nth-child(8) { animation-delay: 14s; }
+.pskills:nth-child(9) { animation-delay: 18s; }
+.pskills:nth-child(10) { animation-delay: 20s; }
+.pskills:nth-child(11) { animation-delay: 22s; }
+.pskills:nth-child(12) { animation-delay: 24; }
+
+
+/*for portfolio page*/
+
+.wContainer{
+    margin-top: 10px;
+    display:grid;
+    grid-template-rows: repeat(3,340px);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.aContainer{
+    margin-top: 10px;
+    display:grid;
+    grid-template-rows: repeat(1,100px);
+    grid-template-columns: repeat(4, 1fr);
+    }
+
+.middle a{
+color:seashell;
+text-decoration: none;
+}

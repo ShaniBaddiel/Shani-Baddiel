@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset ="utf-8"/>
+<title>Survey Form</title>
+<link rel = "stylesheet" a href = "Survey.css">
+
+
+<style>
+  
+.backButton{
+  border-radius: 15%;
+  background-color:seashell;
+}
+
+.backButton a{
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+}
+</style>
+</head>
+
+<body>
+
+  <button class="backButton"><a href="../portfolio.html">Back</a></button>
+
+<div id="title" id = "top">Welcome to Shani's personality survey!</div>
+
+
+<br>
+<div align = "center">This is a survey for you to complete. Give it your <em>best!</em></div>
+
+
+<br>
+
+
+<br>
+<form action="shanibaddiel52@gmail.com" method = "post" enctype = "text/plain">
+Name: <input type = "text" required id = "name">
+<br><br>
+Email adress: <input type = "email" id = "email" required placeholder = "example@mail.provider">
+<br><br>
+Age:<input type = "number" min = "17" max = "70">
+<br><br>
+<p>What activity do you like to do best?</p>
+<label><input type = "radio" name = "sports">Ice Skating</label>
+<label><input type = "radio" name = "sports">Horse Riding</label>
+<br><br>
+<label><input type = "radio" name = "sports">Water skiing</label>
+<label><input type = "radio" name = "sports">Sky diving</label>
+<br><br><p>What colours do you like most?</p>
+<label><input type = "checkbox" name = "Colour">white</label><br>
+<label><input type = "checkbox" name = "Colour">pink</label><br>
+<label><input type = "checkbox" name = "Colour">purple</label><br>
+<br><p>Favourite flower of these 4?</p>
+
+<p><select name="flowers">
+  <option value="Poppy">Poppies</option>
+  <option value="Tulips">Tulips</option>
+  <option value="Roses">Roses</option>
+  <option value="Violets">Violets</option>
+</select>
+</p>
+<br><br>
+
+<fieldset>
+  <legend>
+    <h3><u>Select the place you would best like to live in </u></h3>
+  </legend>
+
+ <table border = "0" align = "center" bgcolor="teal">
+<tr>
+<th>
+<label>
+<input type="radio" name="place" id="animate">
+<img src="Images/Zimbabwe.jpg" alt="Zimbabwe" class = "size">
+<div>Zimbabwe</div></label>
+</th>
+<th>
+ <label>
+ <input type="radio" name="England" id="female">
+  <img src="Images/England.jpg" alt="England" class = "size">
+<div>England</div></label>
+</th>
+<th>
+  <label for="Mauritius">
+<input type="radio" name="place" id="female">
+  <img src="Images/Mauritius.jpg" alt="Mauritius" class = "size">
+  <div>Mauritius</div></label>
+</th>
+</tr><tr>
+<th>
+ <label for="Nepal">
+ <input type="radio" name="place" id="female">
+    <img src="Images/Nepal.jpg" alt="Nepal" class = "size">
+  <div>Nepal</div></label>
+</th>
+<th>
+<label for="Israel">
+  <input type="radio" name="place" id="female">
+    <img src="Images/Israel.jpg" alt="Israel" class = "size">
+<div>Israel</div></label>
+</th>
+<th>
+  <label for="Tanzania">
+<input type="radio" name="place" id="female">
+    <img src="Images/Tanzania.jpg" alt="Tanzania" class = "size">
+ <div>Tanzania</div></label>
+</th>
+</tr><tr>
+<th>
+ <label for="Italy"> 
+<input type="radio" name="place" id="female">
+    <img src="Images/Italy.jpg" alt="Italy" class = "size">
+  <div>Italy</div></label>
+</th>
+<th>
+   <label for="America">
+<input type="radio" name="place" class = "sr-only" id="female">
+    <img src="Images/America.jpg" alt="America" class = "size">
+  <div>America</div></label>
+</th>
+<th>
+   <label for="Canada">
+<input type="radio" name="place" class = "sr-only" id="female">
+    <img src="Images/Canada.jpg" alt="Canada" class = "size">
+<div>Canada</div></label>
+</th>
+</tr>
+</table>
+</fieldset>
+
+
+<br><br>
+<p><b>Dogs</b> can mean a whole lot to people. Choose the reason that you agree with most:</p>
+
+<table align = "center">
+<tr><td><input type="radio" name="gender" class="sr-only" id="male">
+  <label for="male"><figcaption>They can make your day</figcaption>
+<img src = "Images/day.jpg" alt = "a close friend" class = "dogsize">
+<br></label></td>
+
+<td>
+<input type="radio" name="gender" class="sr-only" id="male">
+  <label for="male"><figcaption>They can teach children responsibility.</figcaption>
+<img src = "Images/responsible.jpg" alt = "Responsibility" class = "dogsize">
+<br></label></td></tr>
+
+<tr><td>
+<input type="radio" name="gender" class="sr-only" id="male">
+  <label for="male"><figcaption>They are fun-loving and entertaining.</figcaption>
+<img src = "Images/entertain.jpg" alt = "Fun loving and energetic" class = "dogsize">
+<br></label></td>
+
+<td>
+<input type="radio" name="gender" class="sr-only" id="male">
+  <label class="container"><figcaption>"They can be like a close friend."</figcaption>
+<img src = "Images/close.jpg" alt = "Close, kind friend" class = "dogsize">
+<br></label></td></tr>
+
+    <tr>
+<td><input type="radio" name="gender" class="sr-only" id="male">
+  <label for="male"><figcaption>"They help people and can serve as guides."</figcaption>
+<img src = "Images/guide.jpg" alt = "acts as a guide" class = "dogsize">
+<br></label></td></tr>
+</table>
+
+<br><blockquote>Thank you for filling this survey out!</blockquote>
+<p>Do you have any other comments or suggestions you would like to make?</p>
+<textarea class = "text" name = "comment" placeholder = "Enter here any comments or suggestions, drag at corner to enlarge as desired.">
+</textarea>
+
+<br>
+<a href="Homepage.html target_blank">
+  <button id ="Submit" text-align = "center" type="submit">Submit</button></a>
+  <br>
+  <aside>This button would be directing to the 'results' page, in a live website.</aside>
+</form>
+
+<br><br><br><br>
+
+
+
+
+<div class = "footer">
+<footer background-color = "black">
+<img src = "Images/flow2.jpg" class = "flow">
+<img src = "Images/Shani.jpg" class = "avatar" alt = "shani baddiel CEO of Aperplums"/>
+Shani Baddiel, web developer and creative designing entrepeneur.
+<p>For more information contact: 011 440 9679
+For any enquiries or information:
+<a href="mailto:shanibaddiel52@gmail.com">
+[<img src = "Images/email.jpg" height= "20" width = "20" alt = "mail">
+]</a>
+<br><small>Created by The SMART&reg; company</small>
+
+<br>
+<br> &copy; Registered with the IDCUE for verifcation with the SRI.
+
+<br><br><a href = "#top">Back to top</a>
+
+</p>
+
+</footer>
+</div>
+</body>
+</html>

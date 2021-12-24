@@ -1,0 +1,141 @@
+h3 {
+    font-size: 100px;
+}
+
+.slider {
+    flex-direction: row;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.img-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: stretch;
+}
+
+
+.dropdown {
+background-color: lightcoral;
+     position: relative;
+  display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 5px;
+       padding-right: 75px;
+    padding-left: 75px;
+}
+    justify-items: first;
+}
+
+
+
+
+h2{font-size: 500px;}
+
+.chaletdiv {
+    display:flex;
+    align-items: flex-end;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightpink;
+  min-width: 100px;
+
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: darkolivegreen;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar {
+     overflow: hidden;
+  background-color: lightcoral; 
+}
+
+.subnav {
+    float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}  
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: lightgreen;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: lightcoral;
+  color: black;
+}
+
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
+
+
+
+footer {
+    position: static;
+    width: 100%;
+    background-color: lightgreen;
+    color: black;
+    text-align: center;
+    Height: auto;
+}
+
+#cape:hover {
+  background-color: lightcoral important!; 
+}

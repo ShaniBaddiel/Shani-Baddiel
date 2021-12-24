@@ -1,0 +1,130 @@
+
+
+
+#title{
+font-size: 50px;
+text-align: center;}
+
+#name{text-transform: capitalize;}
+
+body{
+background-color: orange;
+font-family: cursive, Raleway;
+color: black;
+}
+
+footer{background-color: #282828;
+color: white;
+text-align: center;
+
+top: 0;
+padding: 30px 40px 30px 40px;
+margin: 0 -10px -40px -10px;
+clear: left;
+}
+
+form{text-align: center;}
+
+
+button input[type = "button"],
+[type = "reset"],
+input[type = "submit"]
+{disply: flex;
+align-items: center;
+background-color: olive;
+width: 80px;
+height: 40px;
+border-radius: 15%;
+font-size: 18px;
+color: white;
+font-family: Helvetica ,Arial Narrow;
+}
+
+
+button:hover{background-color: #FF4500;}
+
+
+#Submit{text-align: center;
+cursor: pointer;}
+
+
+
+.rotate{
+  transform: rotate(45deg);}
+
+
+.size{
+border: 1px solid gray;
+border-radius: 5px;
+padding: 0px;
+width: 300px;
+max-width: 100%;
+height: auto;
+}
+
+label div{text-align: center;}
+
+input[type=radio]{
+cursor: pointer;
+}
+
+input[type = radio]:checked+img{
+padding: 16px;
+opacity: 1;
+}
+
+.text{
+font-family: monospace;
+font-size: 14px;
+overflow: auto;
+width: 600px;
+height: auto;}
+
+
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.dogsize{
+border: 1px solid gray;
+border-radius: 5px;
+padding: 0px;
+width: 180px;
+height: 150px;
+}
+
+
+label {
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+label:hover {
+  filter: grayscale(0);
+cursor: not-allowed;
+}
+input[type="radio"]:checked + label {
+  filter: grayscale(0);
+}
+
+
+  &:valid {
+        background: url(images/check.svg);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position: 20px 20px;
+}
+
+
+.flow{
+height: 160px;
+width: 110px;
+display: inline;
+float: right;
+overflow: hidden;
+margin: 0 30px 10px 0;
+}

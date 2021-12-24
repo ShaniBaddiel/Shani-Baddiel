@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Currency converter</title>
+  <style>
+   
+    #background {
+      background-color: black;
+      width: 600px;
+      height: 400px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    #foreground {
+      background-color: rgb(26, 238, 26);
+      width: 600px;
+      height: 400px;
+      z-index: 10;
+      position: absolute;
+      margin: -300px 350px;
+      box-shadow: 2px 2px 20px 8px black;
+      padding: 20px;
+      display: block;
+    }
+
+    #convertedMoney {
+      color: black;
+      font-size: 30px;
+      text-align: justify;
+    }
+
+    
+.backButton{
+  border-radius: 15%;
+  background-color:seashell;
+}
+
+.backButton a{
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+}
+  </style>
+
+</head>
+
+
+
+<body>
+<button class="backButton"><a href="../portfolio.html">Back</a></button>
+
+
+
+  <h2 style="text-align: center; padding-top: 20px;">Convert Rands (ZAR) into other currencies</h2>
+  <!--this button is to change the style of the paragraph above through js.-->
+  <div id="background"></div>
+
+  <div id="foreground">
+    <input type="number" id="rands" min="1" placeholder="Enter Rands here" />
+    <br><br><button onclick="convertMoney()">Convert!</button>
+
+    <!--one dollar is currently 15 rand-->
+    <!--one pound is currently 20 rand-->
+    <!--one euro is currently 18 rand-->
+
+    <p id="convertedMoney" style="font-style: oblique;">Enter an amount of South African Rands in the box provided, to convert into an approximated conversion value for Euros, Pounds and Dollars.</p>
+  </div>
+
+
+
+
+ 
+</body>
+
+</html>
+<script src="currencyConverter.js" type="text/javascript"></script>

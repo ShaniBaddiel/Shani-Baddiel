@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Javascript Calculator</title>
+
+  <style>
+    body {
+      padding-top: 10px;
+      background-color: #f5b273;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 70px 70px 70px 70px;
+      grid-template-rows: 70px 70px 70px 75px 70px;
+      grid-gap: 3px;
+
+    }
+
+    #rectangle {
+      width: 300px;
+      height: 80px;
+      margin: inherit;
+      border: 1px solid black;
+      margin-right: 68px;
+      padding-bottom: 0px;
+      margin-bottom: 12px;
+      box-shadow: 0.5px 2px 2px black;
+    }
+
+    .span {
+      grid-row-start: span 2;
+
+    }
+
+    .container {
+      display: block;
+      margin: auto;
+      width: 380px;
+      padding: 45px 5px 35px 60px;
+      border: 2px solid grey;
+      background-color: darkgrey;
+      box-shadow: 3px 5px 8px #FF4500;
+    }
+
+
+    .buttondisplay {
+      background-color: black;
+      color: white;
+    }
+
+    .border {
+      height: 65px;
+      border-radius: 14px;
+    }
+
+    .square {
+      border: 0;
+    }
+    
+    .backButton{
+  border-radius: 15%;
+  background-color:seashell;
+}
+
+.backButton a{
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+}
+
+  </style>
+
+</head>
+
+<body>
+
+
+
+ <h1>Javascript Calculator</h1>
+  <div class="container">
+
+
+    <p id="rectangle"></p>
+
+    <div class="grid calculator-keys">
+
+      <button class="buttondisplay border" onclick="clearAll()" id="clearAll">C</button>
+      <button class="buttondisplay border" onclick="addOn(this)" value="+">+</button>
+      <div style="background-color:darkgrey;"> </div>
+      <div style="background-color:darkgrey;"> </div>
+      <button class="buttondisplay" onclick="addOn(this)" value="%" data-action="percentage?modulus">%</button>
+      <button class="buttondisplay" onclick="addOn(this)" data-action="minus" value="-">-</button>
+      <button class="buttondisplay" onclick="addOn(this)" value="*" data-action="times">X</button>
+      <button class="buttondisplay" onclick="addOn(this)" data-action="divided" value="/">/</button>
+      <button class="buttondisplay" onclick="addOn(this)" value="9">9</button>
+      <button class="buttondisplay" onclick="addOn(this)" value="8">8</button>
+      <button class="buttondisplay" onclick="addOn(this)" value="7">7</button>
+      <button class="buttondisplay" onclick="addOn(this)" value="6">6</button>
+      <button class="buttondisplay" onclick="addOn(this)" value="5">5</button>
+      <button class="buttondisplay" onclick="addOn(this)" value="4">4</button>
+      <button class="buttondisplay" onclick="addOn(this)" value="3">3</button>
+      <button class="buttondisplay" onclick="addOn(this)" value="2">2</button>
+      <button class="buttondisplay" onclick="addOn(this)" value="1">1</button>
+      <button class="buttondisplay" onclick="addOn(this)" data-action="decimal" value=".">.</button>
+      <button class="buttondisplay" onclick="addOn(this)" value="0">0</button>
+      <button class="buttondisplay" onclick="calculate()">=</button>
+
+
+
+    </div>
+  </div>
+  <br><br>
+  <button class="backButton"><a href="../portfolio.html">Back</a></button>
+
+ 
+</body>
+
+</html>
+<script src="task3.js" type="text/javascript"></script>

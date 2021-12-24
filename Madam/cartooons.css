@@ -1,0 +1,28 @@
+ 
+body{width: 90%;}
+.images{vertical-align: middle;}
+
+
+.sidenav {
+    width: 150px;
+border-radius: 15px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+   right: 40px;
+    background: #FFFF99;
+opacity: 0.7;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+
+.sidenav a {
+    padding: 6px 2px 6px 2px;
+    font-size: 30px;
+    color: olive;
+text-decoration: none;
+    display: block;
+text-align: center;
+}
+
+

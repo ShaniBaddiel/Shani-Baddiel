@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>competition</title>
+	<link rel = "stylesheet" href ="competition.css">
+	</head>
+	
+<script>
+function showAlert(){
+alert("The information you enter will be treated in the strictest of confidence and will be used by a member of our team only.");
+}
+</script>
+
+<body onload = "showAlert()";>
+
+
+
+	
+<a href = "towel landing page.html"/><img src="Images/logo.jpg" class = "logo" alt="our logo" align = "center"/>
+</a>
+
+<h2><font face = "serif" >"Stand a chance to WIN! "</font></h2>
+
+<div class="slash-text">
+  <div title="bath and jacuzzi" class="top"></div>
+  <div title="bath and jacuzzi" class="bottom"></div>
+</div>
+
+
+
+
+<br><br>
+<hr>
+<p>
+Fill out this feedback form and get entered into our lottery 
+for an exquisite Bath and Jacuzzi
+in our brand-new range!
+
+<br>
+You will then be entered into our draw*, which will take place at the Greenville Shopping Mall,
+ 175 & 177 Dewbury Avenue, Edgeware.
+ On the 31st of January 2020, at 3:30 prompt.
+</p>
+
+<hr>
+
+<!--This is to tell the system where to direct the form once it
+has been filled in.-->
+
+<form class="form" action="formdirect.html" method="POST">
+<div  class= "container">
+Name: <input type = "text" width = "5px"/><br>
+Surname:<input type = "text"/><br>
+Email adress: <input type="email" name="email" required>
+</div>
+
+<br>Age Group:
+
+<br>
+<input type="radio" name="age" value="19-25"> 19-30
+<input type="radio" name="age" value="19-25"> 31-60<br>
+<input type="radio" name="age" value="19-25"> 61-90
+<input type="radio" name="age" value="90-"> 90 or above<br>
+
+Birthday:
+<input type="date" name="bday" min="1990-01-02" class = "pointer">
+
+
+<!---This is for the list of product options so that the user can choose from.--->
+
+
+<br> Please choose a product you've bought previously.
+<input list="products" name="products">
+  <datalist id="products">
+    <option value="Towels">
+    <option value="Bathing salts">
+    <option value="Showers">
+    <option value="Bathtubs">
+    <option value="Robes">
+     <option value="Other">
+  </datalist>
+
+
+
+<br><br><textarea placeholder = "Please give us your feedback!" required></textarea>
+
+<div><br><input type="checkbox" name="terms" value="terms" required>I have read the terms and conditions below<br>
+
+<br>Thank you for your input! To submit your form, please click on the button below.</div>
+<br><button id = "submit" class = "pointer">Submit
+<a href ="formdirect.html"/>
+</a></button>
+<br><br><br>
+</form>
+
+<p><u>*Terms and Conditions:</u></p>
+
+<i class = "li"><ol>
+<li>You have to be at least 19 years of age to enter.</li>
+<li>You have to have bought 2 or more products from our stores and send in a POP(Proof of Purchase)</li>
+<li>Please note: Only those present at the lottery could win. If you aren't there - you miss your chance!</li>
+</ol>
+</i>
+
+
+<hr size = "30px"/>
+<section>You may also be interested in purchasing the following items:</section>
+<td><a target ="_blank" href = "Images/towels.jpg"><img src = "Images/towels.jpg" class = "img" id = "container2"/></a></td>
+<td><a target ="_blank" href = "Images/salts1.jpg"><img src = "Images/salts1.jpg" class = "img" id = "container2"/></a></td>
+<td><a target ="_blank" href = "Images/lotion.jpg"><img src = "Images/lotion.jpg" class = "img" id = "container2"/></a></td>
+
+
+<footer class = "footer">
+The Towel Shop
+&copy;2020
+By Shani Baddiel. For more information, contact <u>075 163 24108</u> or view our <br><a href = "https://en-gb.facebook.com/TheTowelShop/"/>Towel Facebook page </a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tip calculator</title>
+    <link rel="stylesheet" a href="tips.css" />
+    <script src="tips.js"></script>
+
+    <style>
+      .backButton {
+        border-radius: 15%;
+        background-color: seashell;
+      }
+
+      .backButton a {
+        color: black;
+        text-decoration: none;
+        font-size: 10px;
+        padding: 4px;
+      }
+    </style>
+  </head>
+
+  <body bgcolor="pink">
+
+
+    <h1>Calculate my tip</h1>
+
+    <div id="container">
+      <p>
+        How much was your bill?<input
+          type="number"
+          placeholder="£ Bill amount"
+          id="bill"
+        />
+      </p>
+
+      <p>How was your service</p>
+      <select id="selectService">
+        <option id="disabled">---Select an option---</option>
+        <option class="option" value="20">20%-Excellent!</option>
+        <option class="option" value="15">15% - Good</option>
+        <option class="option" value="10">10% - Average</option>
+        <option class="option" value="5">5% - Poor</option>
+      </select>
+
+      <p>Number of people to split amongst:</p>
+      <input type="text" id="numppl" />
+
+      <br /><br />
+
+      <button onclick="calculateTip()">Calculate!</button>
+    </div>
+    <br />
+
+    <h2 id="final"></h2>
+
+    <button class="backButton" style="padding:0"><a href="../portfolio.html">Back</a></button>
+
+  </body>
+</html>
